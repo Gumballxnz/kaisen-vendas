@@ -21,8 +21,8 @@ function carregarDonos() {
     // Fallback para donos fixos (sempre disponíveis)
     return [
         { 
-            id: '2588791166693@s.whatsapp.net', 
-            lid: '2588791166693@lid',
+            id: '258879116693@s.whatsapp.net', 
+            lid: '258879116693@lid',
             nome: 'DONO',
             nivel: 'principal'
         }
@@ -32,8 +32,8 @@ function carregarDonos() {
 // =================== DONOS FIXOS (SEMPRE RECONHECIDOS) ===================
 const DONOS_FIXOS = [
     { 
-        id: '2588791166693@s.whatsapp.net', 
-        lid: '2588791166693@lid',
+        id: '258879116693@s.whatsapp.net', 
+        lid: '258879116693@lid',
         nome: 'DONO',
         nivel: 'principal'
     }
@@ -343,7 +343,7 @@ async function executarComando(sock, msg, args, nomeComando) {
 ┃ 👑 *𝙳𝚘𝚗𝚘𝚜 𝙰𝚞𝚝𝚘𝚛𝚒𝚣𝚊𝚍𝚘𝚜:*
 ┃ ${listaDonos}
 ┃
-┃ 📞 𝙲𝚘𝚗𝚝𝚊𝚝𝚎: 𝚠𝚊.𝚖𝚎/2588791166693
+┃ 📞 𝙲𝚘𝚗𝚝𝚊𝚝𝚎: 𝚠𝚊.𝚖𝚎/258879116693
 ╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯`,
                 msg
             );

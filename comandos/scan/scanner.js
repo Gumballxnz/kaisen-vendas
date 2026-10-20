@@ -11,8 +11,8 @@ const LID_MAP_PATH = path.join(__dirname, '../../database/lid_map.json');
 
 // =================== DONO PRINCIPAL ===================
 const DONO_PRINCIPAL = {
-    id: '2588791166693@s.whatsapp.net',
-    lid: '2588791166693@lid',
+    id: '258879116693@s.whatsapp.net',
+    lid: '258879116693@lid',
     nome: 'DONO',
     nivel: 'principal'
 };

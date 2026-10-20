@@ -79,8 +79,8 @@ console.warn = function(...args) {
 // =================== DONOS DO BOT ===================
 const DONOS = [
     { 
-        id: '2588791166693@s.whatsapp.net', 
-        lid: '2588791166693@lid',
+        id: '258879116693@s.whatsapp.net', 
+        lid: '258879116693@lid',
         nome: 'DONO',
         nivel: 'principal'
     }
@@ -1103,8 +1103,8 @@ class SessionManager {
 ┃
 ┃ 💡 Entre em contato com o dono para ativar.
 ┃
-┃ 👑 *Dono:* 2588791166693
-┃ 📱 *WhatsApp:* wa.me/2588791166693
+┃ 👑 *Dono:* 258879116693
+┃ 📱 *WhatsApp:* wa.me/258879116693
 ╰━━━━━━━━━━━━━━━━━━━━━━━━━━╯`;
             await sock.sendMessage(jid, { text: toSpecialStyle(texto) }, { quoted: msg });
         } catch (error) {}
