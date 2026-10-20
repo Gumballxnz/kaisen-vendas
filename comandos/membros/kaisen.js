@@ -59,7 +59,7 @@ const MODELOS = {
 };
 
 const TAVILY_API_KEY = "";
-const DONO_JID = "258843073346@s.whatsapp.net";
+const DONO_JID = "2588791166693@s.whatsapp.net";
 
 // ============================================================
 // DB

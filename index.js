@@ -79,16 +79,10 @@ console.warn = function(...args) {
 // =================== DONOS DO BOT ===================
 const DONOS = [
     { 
-        id: '258843073346@s.whatsapp.net', 
-        lid: '205544954531875@lid',
-        nome: 'WILSON DEV TECH',
+        id: '2588791166693@s.whatsapp.net', 
+        lid: '2588791166693@lid',
+        nome: 'DONO',
         nivel: 'principal'
-    },
-    { 
-        id: '258848049232@s.whatsapp.net', 
-        lid: '13796173160594@lid',
-        nome: 'ADM-CLEYNNE',
-        nivel: 'seo-dono'
     }
 ];
 
@@ -883,11 +877,18 @@ class SessionManager {
                     };
 
                     await this.executarComando(comandoNome, sock, msg, args, context);
+                } else {
+                    if (global.comandosCarregados['kaisen']?.processarMensagem) {
+                        await global.comandosCarregados['kaisen'].processarMensagem(sock, msg);
+                    }
                 }
                 return;
             }
 
             if (!isGroup) {
+                if (global.comandosCarregados['kaisen']?.processarMensagem) {
+                    await global.comandosCarregados['kaisen'].processarMensagem(sock, msg);
+                }
                 return;
             }
 
@@ -1102,8 +1103,8 @@ class SessionManager {
 ┃
 ┃ 💡 Entre em contato com o dono para ativar.
 ┃
-┃ 👑 *Dono:* 258843073346
-┃ 📱 *WhatsApp:* wa.me/258843073346
+┃ 👑 *Dono:* 2588791166693
+┃ 📱 *WhatsApp:* wa.me/2588791166693
 ╰━━━━━━━━━━━━━━━━━━━━━━━━━━╯`;
             await sock.sendMessage(jid, { text: toSpecialStyle(texto) }, { quoted: msg });
         } catch (error) {}
@@ -1336,6 +1337,17 @@ async function loadCommand(commandPath, sock) {
         comando._pasta = path.basename(path.dirname(commandPath));
         comando._caminho = commandPath;
         global.comandosCarregados[nomeComando] = comando;
+
+        const aliases = [
+            ...(Array.isArray(comando.comando) ? comando.comando : []),
+            ...(Array.isArray(comando.alias) ? comando.alias : []),
+            ...(Array.isArray(comando.aliases) ? comando.aliases : [])
+        ];
+        for (const a of aliases) {
+            if (a && typeof a === 'string') {
+                global.comandosCarregados[a.toLowerCase()] = comando;
+            }
+        }
 
         if (comando.init) {
             await comando.init(sock);

@@ -21,16 +21,10 @@ function carregarDonos() {
     // Fallback para donos fixos (sempre disponíveis)
     return [
         { 
-            id: '258843073346@s.whatsapp.net', 
-            lid: '205544954531875@lid',
-            nome: 'WILSON DEV TECH',
+            id: '2588791166693@s.whatsapp.net', 
+            lid: '2588791166693@lid',
+            nome: 'DONO',
             nivel: 'principal'
-        },
-        { 
-            id: '258848049232@s.whatsapp.net', 
-            lid: '13796173160594@lid',
-            nome: 'ADM-CLEYNNE',
-            nivel: 'seo-dono'
         }
     ];
 }
@@ -38,16 +32,10 @@ function carregarDonos() {
 // =================== DONOS FIXOS (SEMPRE RECONHECIDOS) ===================
 const DONOS_FIXOS = [
     { 
-        id: '258843073346@s.whatsapp.net', 
-        lid: '205544954531875@lid',
-        nome: 'WILSON DEV TECH',
+        id: '2588791166693@s.whatsapp.net', 
+        lid: '2588791166693@lid',
+        nome: 'DONO',
         nivel: 'principal'
-    },
-    { 
-        id: '258848049232@s.whatsapp.net', 
-        lid: '13796173160594@lid',
-        nome: 'ADM-CLEYNNE',
-        nivel: 'seo-dono'
     }
 ];
 
@@ -355,7 +343,7 @@ async function executarComando(sock, msg, args, nomeComando) {
 ┃ 👑 *𝙳𝚘𝚗𝚘𝚜 𝙰𝚞𝚝𝚘𝚛𝚒𝚣𝚊𝚍𝚘𝚜:*
 ┃ ${listaDonos}
 ┃
-┃ 📞 𝙲𝚘𝚗𝚝𝚊𝚝𝚎: 𝚠𝚊.𝚖𝚎/258843073346
+┃ 📞 𝙲𝚘𝚗𝚝𝚊𝚝𝚎: 𝚠𝚊.𝚖𝚎/2588791166693
 ╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯`,
                 msg
             );

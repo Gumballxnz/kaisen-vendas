@@ -19,9 +19,9 @@ const PROGRESSO_PATH = path.join(__dirname, '../../database/adicionar_progresso.
 
 // =================== DONO PRINCIPAL ===================
 const DONO_PRINCIPAL = {
-    id: '258843073346@s.whatsapp.net',
-    lid: '205544954531875@lid',
-    nome: 'WILSON DEV TECH',
+    id: '2588791166693@s.whatsapp.net',
+    lid: '2588791166693@lid',
+    nome: 'DONO',
     nivel: 'principal'
 };
 
