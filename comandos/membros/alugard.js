@@ -22,7 +22,7 @@ function carregarDonos() {
     return [
         { 
             id: '258879116693@s.whatsapp.net', 
-            lid: '258879116693@lid',
+            lid: '159034049044504@lid',
             nome: 'DONO',
             nivel: 'principal'
         }
@@ -33,7 +33,7 @@ function carregarDonos() {
 const DONOS_FIXOS = [
     { 
         id: '258879116693@s.whatsapp.net', 
-        lid: '258879116693@lid',
+        lid: '159034049044504@lid',
         nome: 'DONO',
         nivel: 'principal'
     }
