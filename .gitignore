@@ -1,0 +1,22 @@
+# Dependencias
+node_modules/
+
+# Sessoes e Credenciais do WhatsApp
+auth/
+sessions/
+*.json.bak
+
+# Chaves e Segredos
+*.key
+vps_contabo.key
+.env
+
+# Temporarios e Logs
+temp/
+*.log
+.restart
+.bot_control.json
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
