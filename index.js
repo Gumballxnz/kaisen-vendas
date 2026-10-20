@@ -862,6 +862,8 @@ class SessionManager {
             const prefixoUsado = comandoInfo.prefixoUsado;
             
             const comandoLiberado = isComandoLiberado(comandoNome);
+
+            console.log(`[MSG] De: ${sender} | Chat: ${from} | Grupo: ${isGroup} | Dono: ${ehDono} | Aluguel: ${aluguelAtivo} | Cmd: "${comandoNome}"`);
             
             let isAdmin = false, isBotAdmin = false;
 

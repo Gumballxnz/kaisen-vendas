@@ -1012,9 +1012,15 @@ async function processarMensagem(sock, msg) {
 
     const from = msg.key.remoteJid;
 
-    // ⛔ SÓ PV
-    if (isGrupo(from)) return false;
-    if (!isPV(from)) return false;
+    if (isGrupo(from)) {
+        const txt = obterTexto(msg).toLowerCase().trim();
+        const cfg = carregarConfig();
+        const pfixos = [cfg.prefixo || "."].concat(cfg.prefixosExtras || []).filter(Boolean);
+        const ehComandoIa = pfixos.some(p => txt.startsWith(p + "ia") || txt.startsWith(p + "kaisen"));
+        if (!ehComandoIa) return false;
+    } else if (!isPV(from)) {
+        return false;
+    }
 
     const id = msg.key.id;
     if (!id) return false;
